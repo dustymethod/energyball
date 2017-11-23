@@ -1,5 +1,6 @@
-# energyball (JavaScript, 2016)
+# energyball
 
+(JavaScript, 2016)
 
 Instructions:
     
