@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <script src="index.js" defer></script>
+   <title> CPSC 1045 - Final Project</title>
+   <style>
+   /*common res: 1366x768*/
+   body {
+      background-color: #08080a;
+
+      color:#acdfef;
+      font-family:"courier";
+      overflow: hidden;
+      font-weight:900;
+   }
+   ::selection{
+      color: aqua;
+   }
+   #controls {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-top: 30px;
+      width: 50%;
+   }
+   #controls table {
+      /*border-top: 1px solid #202230;
+      border-bottom: 1px solid #302230;*/
+   }
+   #controls tr, td {
+      /*width: 500px;*/
+      width: 480px;
+      /*top right bot left*/
+      /*padding: 10px 0px 10px 10px;*/
+      /*vert, horiz*/
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+   }
+   #controls img {
+      width: 62%;
+      height: 62%;
+      padding-left: 30px;
+   }
+   canvas {
+      border: 2px solid #151515;
+      display: block;
+
+      padding-left: 0;
+      padding-right: 0;
+      margin: auto;
+      /*            width: 100%;*/
+      cursor: crosshair;
+   }
+   </style>
+</head>
+<body onload="setup()">
+   <canvas id="idCanvas" width="900" height="600"></canvas>
+   <div id="controls">
+      <img src="images/keyboardWhiteOutline_v3_marked.png" alt="Keyboard_Controls">
+      <table>
+         <tr>
+            <td>
+               &gt; blue player &lt;
+               <br>
+               move: wasd<br>
+               aim: qe<br>
+               charge/shoot: c <br>
+               shield: v
+            </td>
+            <td>
+               &gt; red player &lt;<br>
+               move: ijkl<br>
+               aim: uo<br>
+               charge/shoot: &#91; <br>
+               shield: &#93;
+            </td>
+         </tr>
+      </table>
+   </div>
+</body>
+</html>
