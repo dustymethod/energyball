@@ -1,15 +1,10 @@
+"use strict";
 /*
-CPSC 1045 Final Project
-   Amanda Chan
-   version: mar 29 2017
-
-   //Stop or start the countdown timer during gameplay.
-   toggleTimer(){};
+	CPSC 1045 Final Project
+	Amanda Chan
 
 */
 
-"use strict";
-/* Global variables */
 const canvas = document.getElementById("idCanvas");
 const ctx = canvas.getContext("2d");
 let documentHasFocus = false;
@@ -44,4 +39,3 @@ let ship1 = null;
 let ship2 = null;
 let player1 = null;
 let player2 = null;
-/* end Global variables */

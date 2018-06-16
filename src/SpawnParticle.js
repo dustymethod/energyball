@@ -10,6 +10,7 @@ class SpawnParticle extends BaseParticle  {
 		this.glowAlpha = 0.12;
 		this.reset();
 	}
+	
 	reset() {
 		this.life = this.maxLife;
 		this.growLife = this.maxGrowLife;
@@ -17,10 +18,12 @@ class SpawnParticle extends BaseParticle  {
 		this.growRadius = 35;
 		this.isActive = false;
 	}
+	
 	spawn(x, y) {
 		this.location.set(x, y);
 		this.isActive = true;
 	}
+	
 	tick() {
 		if (this.isActive) {
 			this.life -= this.decayRate;
