@@ -197,15 +197,15 @@ document.addEventListener("keyup", function(event) {
 });
 
 //Toggle the countdownTimer on or off
-function toggleTimer() {
-   if (gameState === "GAME_RUNNING") {
-      if (timerRate === 1) {
-         timerRate = 0;
-      } else if (timerRate === 0) {
-         timerRate = 1;
-      }
-   }
-}
+// function toggleTimer() {
+//   if (gameState === "GAME_RUNNING") {
+//       if (timerRate === 1) {
+//          timerRate = 0;
+//       } else if (timerRate === 0) {
+//          timerRate = 1;
+//       }
+//   }
+// }
 document.addEventListener("click", function(event) {
    if (gameState === "GAME_START" && pageIndex == 0) {
       pageIndex += 1;
