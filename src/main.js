@@ -215,7 +215,7 @@ function showGameInfo() { //game info toggled via bool isShowingInfo
 	drawBackground();
 	ctx.fillStyle = "rgba(100, 150, 225, 0.6)";
 	let line = 30;
-	drawText("Amanda Chan", canvas.width/2, canvas.height/2, 20, "center");
+	drawText("", canvas.width/2, canvas.height/2, 20, "center");
 	drawText("CPSC 1045 - Web Programming", canvas.width/2, canvas.height/2 +line, 20, "center");
 	drawText("2016", canvas.width/2, canvas.height/2 +line*2, 20, "center");
 	drawText("[i] back", canvas.width -30, canvas.height -30, 16, "right");
@@ -228,7 +228,7 @@ function showInfo2() {
 	const startY = 85;
 	const size = 15;
 	drawText("CPSC 1045 - Web Programming", startX, startY - line*3, size, "left");
-	drawText("Amanda Chan", startX, startY - line * 2, size, "left");
+	drawText("", startX, startY - line * 2, size, "left");
 	drawText("2016", startX, startY - line*1, size, "left");
 	// drawText("[i] back", canvas.width -30, canvas.height -30, 16, "right");
 };
